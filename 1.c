@@ -1,9 +1,13 @@
 #include <stdio.h>
+
+#include <float.h>
  
 int main()
 {
-    /* 我的第一个 C 程序 */
-    printf("Hello, World! \n");
- 
-    return 0;
+   printf("float 存储字节数 : %zu \n", sizeof(float));
+   printf("float 最小值: %E\n", FLT_MIN );
+   printf("float 最大值: %E\n", FLT_MAX );
+   printf("精度值: %d\n", FLT_DIG );
+   
+   return 0;
 }
